@@ -1,5 +1,5 @@
 # jokepile
-A pile of jokes. And van load of pakistans... you know?
+A pile of jokes. And [van full of pakistans](https://www.microsoft.com/en-us/store/music/album/yall-so-stupid/van-full-of-pakistans/8d6kgx778rxp)... you know?
 
 
 
