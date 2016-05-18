@@ -1,2 +1,2 @@
-# peopile
-A pile of people. And van load of pakistans... you know?
+# jokepile
+A pile of jokes. And van load of pakistans... you know?
