@@ -4,7 +4,7 @@
   "description": "a pile of jokes. a school of fish. and van full of pakistans...",
   "main": "app.js",
   "scripts": {
-    "test": "node ./bin/test", 
+    "test": "node ./bin/test",
     "start": "node ./bin/www"
   },
   "repository": {
