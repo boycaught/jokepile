@@ -1,0 +1,33 @@
+{
+  "name": "jokepile",
+  "version": "1.0.0",
+  "description": "a pile of jokes. a school of fish. and van full of pakistans...",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./bin/test", 
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boycaught/jokepile.git"
+  },
+  "keywords": [
+    "jokes",
+    "databaes",
+    "api",
+    "social-media",
+    "graph",
+    "cloud"
+  ],
+  "author": "github.bot@lagtime.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boycaught/jokepile/issues"
+  },
+  "homepage": "https://github.com/boycaught/jokepile#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "npm": "^6.0.0"
+  }
+}

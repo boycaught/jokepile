@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:visited { 
+  background-color: pink; 
+}
+
+.egg {
+  color: orange;
+  font-weight: bold;
+}
+
+.priv {
+  color: red;
+  font-weight: bold;
+}
+
+.susp {
+  color: gray;
+  font-weight: bold;
+}

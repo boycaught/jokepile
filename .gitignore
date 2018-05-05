@@ -1,2 +1,13 @@
-# local data (used locally for testing and wip)
-data/src
+# data (used locally for testing and wip)
+data/src/*
+
+# node modules
+node_modules/*
+
+# source files
+src/*
+
+# utility files
+.package-lock.json
+npm-debug.log
+
