@@ -8,11 +8,11 @@ var bodyParser = require('body-parser');
 var home = require('./routes/index');
 var api = require('./routes/api');
 var auth = require('./routes/auth');
-var dataservices = require('./routes/dataservices');
-var messages = require('./routes/messages');
-var tests = require('./routes/tests');
-var users = require('./routes/users');
-var twitter = require('./routes/twitter');
+var ds = require('./routes/dataservices');
+var msg = require('./routes/messages');
+var test = require('./routes/tests');
+var usr = require('./routes/users');
+var tt = require('./routes/twitter');
 
 var app = express();
 
@@ -31,11 +31,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', home);
 app.use('/api', api);
 app.use('/auth', auth);
-app.use('/dataservices', dataservices);
-app.use('/messages', messages);
-app.use('/tests', tests);
-app.use('/users', users);
-app.use('/twitter', twitter);
+app.use('/ds', ds);
+app.use('/msg', msg);
+app.use('/test', test);
+app.use('/usr', usr);
+app.use('/tt', tt);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
