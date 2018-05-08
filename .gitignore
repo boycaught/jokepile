@@ -1,3 +1,23 @@
+# standard ignores
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+# Operating system files
+.Spotlight-V100
+.Trashes
+.DS_Store
+.DS_Store?
+Thumbs.db
+pids
+logs
+results
+
 # data (used locally for testing and wip)
 data/src/*
 
@@ -11,3 +31,8 @@ src/*
 package-lock.json
 npm-debug.log
 
+# CodeKit
+*.codekit
+
+# uploaded files
+public/dropbox/*
