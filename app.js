@@ -5,10 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+var home = require('./routes/index');
 var api = require('./routes/api');
 var auth = require('./routes/auth');
-var data = require('./routes/data');
+var dataservices = require('./routes/dataservices');
 var messages = require('./routes/messages');
 var tests = require('./routes/tests');
 var users = require('./routes/users');
@@ -28,7 +28,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', home);
+app.use('/api', api);
+app.use('/auth', auth);
+app.use('/dataservices', dataservices);
+app.use('/messages', messages);
 app.use('/tests', tests);
 app.use('/users', users);
 app.use('/twitter', twitter);
