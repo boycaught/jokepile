@@ -39,8 +39,9 @@ a:visited {
 
 /* dev-menu */
 .menubar ul {
-  margin: 0;
-  padding: 0;
+  background: yellow;
+  margin: 4px;
+  padding: 4px;
 }
 
 .menubar ul li { 
@@ -50,8 +51,11 @@ a:visited {
 }
 
 .copyright {
+  background: yellow;
   color: red;
   font-size: 0.80em;
+  margin: 4px;
+  padding: 4px;
   text-align: right;
 }
 
