@@ -4,7 +4,6 @@
   "description": "a pile of jokes. a school of fish. and van full of pakistans...",
   "main": "app.js",
   "scripts": {
-    "test": "node ./bin/test",
     "start": "node ./bin/www"
   },
   "repository": {
@@ -13,7 +12,7 @@
   },
   "keywords": [
     "jokes",
-    "databaes",
+    "databases",
     "api",
     "social-media",
     "graph",
@@ -31,10 +30,10 @@
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "graphql": "^0.13.2",
-    "morgan": "^1.9.0",
     "npm": "^6.0.0",
     "path": "^0.12.7",
     "pug": "^2.0.3",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "winston": "^2.4.2"
   }
 }
