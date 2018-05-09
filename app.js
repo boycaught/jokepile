@@ -10,9 +10,9 @@ var auth = require('./routes/auth');
 var ds = require('./routes/dataservices');
 var msg = require('./routes/messages');
 var test = require('./routes/tests');
-var usr = require('./routes/users');
-var tt = require('./routes/twitter');
-var logger = require('./routes/logger');
+var user = require('./routes/users');
+var tweet = require('./routes/twitter');
+var log = require('./routes/logger');
 
 var app = express();
 
@@ -35,8 +35,8 @@ app.use('/auth', auth);
 app.use('/ds', ds);
 app.use('/msg', msg);
 app.use('/test', test);
-app.use('/usr', usr);
-app.use('/tt', tt);
+app.use('/user', user);
+app.use('/tweet', tweet);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

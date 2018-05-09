@@ -35,26 +35,18 @@ var verboselogger = new (winston.Logger)({
 
 //* exports */
 exports.logInfo = function(info) {
-
     infologger.log('info', info);
-
 };
 
 exports.logError = function(error) {
-
     errorlogger.log('error', error);
-
 };
 
 exports.logWarning = function(warning) {
-
     warninglogger.log('warning', warning);
-
 };
 
 exports.logVerbose = function(verbose) {
-
     verboselogger.log('warning', verbose);
-
 };
 

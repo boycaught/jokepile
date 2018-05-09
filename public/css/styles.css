@@ -1,5 +1,15 @@
+/*
+@IMPORT url('general_foundicons.css');
+@IMPORT url('font-awesome.css');
+@IMPORT url('foundation.datepicker.css');
+@IMPORT url('../dropbox/cdn/toastr/toastr.min.css');
+@IMPORT url('../components/angular-macgyver/lib/macgyver.css');
+@IMPORT url('ng-tags-input.css');
+@IMPORT url('landor-web-fonts.css'); 
+*/
+
 body {
-  background: lightblue;
+  background: lightyellow;
   padding: 50px;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -26,3 +36,23 @@ a:visited {
   color: gray;
   font-weight: bold;
 }
+
+/* dev-menu */
+.menubar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menubar ul li { 
+  display: inline;
+  padding: 0 8px 0 0;
+  font-weight: bold;
+}
+
+.copyright {
+  color: red;
+  font-size: 0.80em;
+  text-align: right;
+}
+
+/* EOF */
