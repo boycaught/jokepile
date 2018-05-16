@@ -1,0 +1,24 @@
+#DRAFT
+To reference [LAGTIME.COM] in publications, please cite both of the 
+following:
+
+Lawrence Green: "[LAGTIME.COM]: [TITLE]".  [VOLUME], [DATE].
+
+Lawrence Green: "[LAGTIME.COM]: [TITLE]". 
+
+@article{ [TITLE-SLUG],
+    author =  {Lawrence Green},
+    title =   { [LAGTIME.COM]: [TITLE] },
+    journal = { [VOLUME] },
+    month =   { [MONTH] },
+    year =    { [YEAR] },
+}
+
+@online{ [TITLE-SLUG],
+  author      = {Lawrence Green},
+  title       = {[LAGTIME.COM]: Lessons Learned},
+  version     = {1},
+  date        = { [DATE] },
+  eprinttype  = {},
+  eprint      = {}
+}
