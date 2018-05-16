@@ -3,6 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var _ = require('underscore');
 
 var home = require('./routes/index');
 var api = require('./routes/api');
@@ -12,7 +13,7 @@ var msg = require('./routes/messages');
 var test = require('./routes/tests');
 var user = require('./routes/users');
 var tweet = require('./routes/twitter');
-var log = require('./routes/logger');
+var logger = require('./routes/logger');
 
 var app = express();
 
@@ -26,6 +27,11 @@ app.set('env', 'development');
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.logger('dev'));
+app.use(express.methodOverride());
+app.use(express.cookieParser('lagtime'));
+app.use(express.session({ secret: 'lagtime' }));
+app.use(express.limit('2000mb'));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -38,6 +44,7 @@ app.use('/msg/', msg);
 app.use('/test/', test);
 app.use('/user/', user);
 app.use('/tweet/', tweet);
+app.use('/logger/', logger);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

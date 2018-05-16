@@ -1,3 +1,15 @@
+/* -----------------------------------------------------------------------
+
+ Authenticat Operations
+
+ ------------------------------------------------------------------------ */
+
+/**
+ * User: larry_green
+ * Date: 5/15/2018
+ * Time: 11:00 PM
+ */
+
 var express = require('express');
 var router = express.Router();
 

@@ -1,3 +1,6 @@
+var express = require('express');
+var router = express.Router();
+
 /* -----------------------------------------------------------------------
 
  Logging Operations (Winston)
@@ -5,7 +8,6 @@
  ------------------------------------------------------------------------ */
 
 var winston = require('winston');
-
 var infologger = new (winston.Logger)({
     transports: [
         new (winston.transports.Console)({ level: 'verbose' }),
@@ -50,3 +52,10 @@ exports.logVerbose = function(verbose) {
     verboselogger.log('warning', verbose);
 };
 
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Logger', message: 'Application logging serices' });
+});
+
+module.exports = router;
