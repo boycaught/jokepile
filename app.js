@@ -3,6 +3,12 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+var session = require('express-session');
+var limit = require('raw-body');
+//var morgan = require('morgan');
+var fs = require('fs');
+var nativelog = fs.createWriteStream(__dirname + '/data/logs/server.log', { flags: 'a' });
 var _ = require('underscore');
 
 var home = require('./routes/index');
@@ -25,14 +31,19 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // middleware
+//app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-//app.use(express.logger('dev'));
-//app.use(express.methodOverride());
-//app.use(express.cookieParser('lagtime'));
-//app.use(express.session({ secret: 'lagtime' }));
-//app.use(express.limit('2000mb'));
+app.use(cookieParser('lagtime'));
+app.use(methodOverride());
+
+// security
+//app.use(session({ secret: 'lagtime' }));
+//app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 }}));
+//app.set('trust proxy', 1) // trust first proxy
+app.use(session({ secret: 'lagtime', resave: false, saveUninitialized: true, cookie: { secure: false } }));
+
+//app.use(limit('2000mb'));
 
 // MAIN ROUTES
 app.use('/', home);
