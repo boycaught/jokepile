@@ -31,7 +31,7 @@ And [van full of pakistans](https://lgti.me/2I3BlcW)... you know?
 	- Tech
 	- Yo Momma
 
-Licensing information is included in the [LICENSE](../LICENSE) file. Citation information is included in the [CITATION](../CITATION) file.
+Licensing information is included in the [LICENSE](LICENSE) file. Citation information is included in the [CITATION](CITATION) file.
 
 
 COPYRIGHT 2016-2018 [LAWRENCE GREEN](mailto:copyright.bot@lagtime.com).
