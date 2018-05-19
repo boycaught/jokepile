@@ -21,19 +21,18 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.set('env', 'development');
-
-// uncomment after placing your favicon in /public
-//app.use(logger('dev'));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.logger('dev'));
-app.use(express.methodOverride());
-app.use(express.cookieParser('lagtime'));
-app.use(express.session({ secret: 'lagtime' }));
-app.use(express.limit('2000mb'));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.logger('dev'));
+//app.use(express.methodOverride());
+//app.use(express.cookieParser('lagtime'));
+//app.use(express.session({ secret: 'lagtime' }));
+//app.use(express.limit('2000mb'));
 
 // MAIN ROUTES
 app.use('/', home);
