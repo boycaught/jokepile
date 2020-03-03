@@ -29,6 +29,7 @@ And [van full of pakistans](https://lgti.me/2I3BlcW)... you know?
 	- Religious
 	- Sports
 	- Tech
+	- Virus
 	- Yo Momma
 
 Licensing information is included in the [LICENSE](LICENSE) file. Citation information is included in the [CITATION](CITATION) file.
