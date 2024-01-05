@@ -8,6 +8,7 @@ And [van full of pakistans](https://lgti.me/2I3BlcW)... you know?
 	- At Work
 	- Bar
 	- Blond
+ 	- Business
 	- College
 	- Dead Baby
 	- Gross
@@ -21,7 +22,10 @@ And [van full of pakistans](https://lgti.me/2I3BlcW)... you know?
 	- News
 	- One Liners
 	- Other
-	- Politics
+ 	- Phobic
+  	- Polish
+	- Political
+ 	- Pronouns
 	- Puns
 	- Racist
 	- Redneck
@@ -31,8 +35,19 @@ And [van full of pakistans](https://lgti.me/2I3BlcW)... you know?
 	- Virus
 	- Yo Momma
 
+ ## Flags
+	- NSFW
+	- Phobic
+	- Poetic
+	- Political
+	- Racist
+	- Religious
+	- Sexist
+
+---
 Licensing information is included in the [LICENSE](LICENSE) file. Citation information is included in the [CITATION](CITATION) file.
+Data schema suggested by [JokeAPI](https://github.com/boycaught/JokeAPI)
 
 
-COPYRIGHT 1995-2020 [LAWRENCE GREEN](mailto:copyright.bot@lagtime.com).
+COPYRIGHT 1995-2024 [LAWRENCE GREEN](mailto:copyright.bot@lagtime.com).
 ALL RIGHTS RESERVED.
