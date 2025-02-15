@@ -50,5 +50,5 @@ Licensing information is included in the [LICENSE](LICENSE) file. Citation infor
 Data schema suggested by [JokeAPI](https://github.com/boycaught/JokeAPI)
 
 
-Copyright &copy; 1995-2024 [Lawrence Green](mailto:copyright.bot@lagtime.com).
+Copyright &copy; 1995-2025 [Lawrence Green](mailto:copyright.bot@lagtime.com).
 All Rights Reserved.
