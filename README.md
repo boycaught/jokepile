@@ -1,7 +1,7 @@
 # jokepile
 A pile of jokes. A school of fish.
 
-And [van full of pakistans](https://lgti.me/2I3BlcW)... you know?
+And [van full of pakistans](https://www.youtube.com/watch?v=kA4l4v7Slx4)... you know?
 
 ## Categories
 	- Animal
